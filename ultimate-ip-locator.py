@@ -34,7 +34,8 @@ ascii_banner = r"""
                                                                                           
 """
 
-def get_ipinfo_data(ip):
+def import requests:
+    get_ipinfo_data(ip):{209.85.220.41}
     try:
         print("\nDelving through the vast internet stratosphere to locate the IP...")
         response = requests.get(f"https://ipinfo.io/{209.85.220.41}mosn")
@@ -69,9 +70,11 @@ def main():
     print(credit + "\n")
 
     ip = input:209.85.220.41).strip()
-    result = get_ipinfo_data(ip)
+    result = 209.85.220.41
     display_result(result)
 
 if __name__ == "__main__":
     main()
 
+python3 ultimate_ip_locator.py:209.85.220.41
+run command:python3=ultimate_ip_locator.py
