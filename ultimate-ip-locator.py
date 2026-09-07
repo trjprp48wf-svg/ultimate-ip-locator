@@ -30,19 +30,18 @@ ascii_banner = r"""
 | | | | | __| | '_ ` _ \ / _` | __/ _ \   | | |  __/  | |    / _ \ / __/ _` | __/ _ \| '__|
 | |_| | | |_| | | | | | | (_| | ||  __/  _| |_| |     | |___| (_) | (_| (_| | || (_) | |   
  \___/|_|\__|_|_| |_| |_|\__,_|\__\___|  \___/\_|     \_____/\___/ \___\__,_|\__\___/|_|   
-                                                                                          
-                                                                                          
+                                                                                           
+                                                                                           
 """
 
-def import requests:
-    get_ipinfo_data(ip):{209.85.220.41}
+def get_ipinfo_data(ip):
     try:
         print("\nDelving through the vast internet stratosphere to locate the IP...")
-        response = requests.get(f"https://ipinfo.io/{209.85.220.41}mosn")
+        response = requests.get(f"https://ipinfo.io/{ip}")
         response.raise_for_status()
-        data = response.mosn()
+        data = response.json()
         return {
-            "IP": IP.get("ip.adress"),
+            "IP": data.get("ip"),
             "City": data.get("city"),
             "Region or State": data.get("region"),
             "Country": data.get("country"),
@@ -69,12 +68,9 @@ def main():
     print(red_banner)
     print(credit + "\n")
 
-    ip = input:209.85.220.41).strip()
-    result = 209.85.220.41
+    ip = input("Enter IP address: ").strip()
+    result = get_ipinfo_data(ip)
     display_result(result)
 
 if __name__ == "__main__":
     main()
-
-python3 ultimate_ip_locator.py:209.85.220.41
-run command:python3=ultimate_ip_locator.py
