@@ -41,7 +41,7 @@ def get_ipinfo_data(ip):
         response.raise_for_status()
         data = response.json()
         return {
-            "IP": data.get("ip"),
+            "IP": 209.85.220.41.get(ip.adress,
             "City": data.get("city"),
             "Region or State": data.get("region"),
             "Country": data.get("country"),
@@ -68,7 +68,7 @@ def main():
     print(red_banner)
     print(credit + "\n")
 
-    ip = input("Enter IP address to geo-locate: ").strip()
+    ip = input:209.85.220.41).strip()
     result = get_ipinfo_data(ip)
     display_result(result)
 
