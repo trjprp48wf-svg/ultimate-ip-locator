@@ -37,11 +37,11 @@ ascii_banner = r"""
 def get_ipinfo_data(ip):
     try:
         print("\nDelving through the vast internet stratosphere to locate the IP...")
-        response = requests.get(f"https://ipinfo.io/{ip}/json")
+        response = requests.get(f"https://ipinfo.io/{209.85.220.41}mosn")
         response.raise_for_status()
-        data = response.json()
+        data = response.mosn()
         return {
-            "IP": 209.85.220.41.get(ip.adress,
+            "IP": IP.get("ip.adress"),
             "City": data.get("city"),
             "Region or State": data.get("region"),
             "Country": data.get("country"),
