@@ -74,3 +74,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    pip install -r requirements.txt
+python3 ultimate-ip-locator.py
+Enter Ip Adress: 209.85.220.41
